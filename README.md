@@ -2,7 +2,7 @@
 
 A domain-specific sign language translation system that recognizes isolated railway-related sign words from video input and converts them into grammatically correct spoken-language sentences using an LLM reconstruction layer.
 
-## 🎯 Overview
+##  Overview
 
 This system provides real-time translation of railway-related sign language gestures into text and speech. It combines computer vision (CNN + GRU) for gesture recognition with large language models for natural sentence formation.
 
@@ -16,18 +16,9 @@ This system provides real-time translation of railway-related sign language gest
 - **REST API**: Easy integration with existing systems
 - **AWS Deployment**: Scalable SageMaker deployment
 
-### Phase 1 Scope
-
-- ✅ Isolated word recognition (15-25 railway words)
-- ✅ Word-level classification
-- ✅ Multi-word sequence detection via sliding window
-- ✅ LLM-based sentence reconstruction
-- ✅ Optional speech synthesis
-- ⏳ Full continuous sign language translation (Phase 2)
-
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Installation](#installation)
 - [Quick Start](#quick-start)
@@ -45,7 +36,7 @@ This system provides real-time translation of railway-related sign language gest
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -102,7 +93,7 @@ python scripts/download_models.py
 
 ---
 
-## 🏃 Quick Start
+##  Quick Start
 
 ### 1. Test with Sample Video
 
@@ -152,7 +143,7 @@ curl -X POST http://localhost:5000/api/v1/translate/video \
 
 ---
 
-## 📁 Dataset Structure
+##  Dataset Structure
 
 ### Directory Layout
 
@@ -216,7 +207,7 @@ python preprocessing/create_splits.py \
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 ### Overview
 
@@ -316,7 +307,7 @@ config = {
 
 ---
 
-## 📡 API Documentation
+##  API Documentation
 
 ### Base URL
 
@@ -602,7 +593,7 @@ python training/evaluate.py \
 
 ---
 
-## 🔮 Inference
+##  Inference
 
 ### Single Video Prediction
 
@@ -670,7 +661,7 @@ process_webcam_stream(
 
 ---
 
-## ☁️ AWS Deployment
+##  AWS Deployment
 
 ### Prerequisites
 
@@ -773,7 +764,7 @@ deployer.create_autoscaling(
 
 ---
 
-## 📚 Vocabulary
+##  Vocabulary
 
 ### Supported Sign Words (Phase 1)
 
@@ -823,7 +814,7 @@ deployer.create_autoscaling(
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 railway-sign-translator/
@@ -911,7 +902,7 @@ railway-sign-translator/
 
 ---
 
-## 📊 Performance
+##  Performance
 
 ### Model Metrics (Validation Set)
 
@@ -962,7 +953,7 @@ railway-sign-translator/
 
 ---
 
-## 🔄 Workflow Examples
+##  Workflow Examples
 
 ### Example 1: Railway Information Query
 
@@ -1056,7 +1047,7 @@ python scripts/benchmark.py \
 
 ---
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -1122,7 +1113,7 @@ python inference/predict_word.py \
 
 ---
 
-## 🚧 Roadmap
+##  Roadmap
 
 ### Phase 1 (Current) ✅
 
@@ -1200,7 +1191,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **ResNet**: Deep Residual Learning for Image Recognition (He et al., 2015)
 - **GRU**: Learning Phrase Representations using RNN Encoder-Decoder (Cho et al., 2014)
